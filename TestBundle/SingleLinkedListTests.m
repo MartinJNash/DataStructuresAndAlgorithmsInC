@@ -34,23 +34,23 @@
 
     int zero = 0;
     SingleLinkedList *zeroList = SingleLinkedListCreate(zero);
-    XCTAssert(SingleLinkedListGetValue(zeroList) == zero);
+    XCTAssert(SingleLinkedListGetValueAtIndex(zeroList, 0) == zero);
     
     int large = 1234;
     SingleLinkedList *maxList = SingleLinkedListCreate(large);
-    XCTAssert(SingleLinkedListGetValue(maxList) == large);
+    XCTAssert(SingleLinkedListGetValueAtIndex(maxList, 0) == large);
     
 }
 
 - (void)testAppending {
     
-    SingleLinkedList *ll = NULL;
-    ll = SingleLinkedListAppend(ll, 1);
-    ll = SingleLinkedListAppend(ll, 2);
+    SingleLinkedList *localList = NULL;
+    localList = SingleLinkedListAppend(localList, 1);
+    localList = SingleLinkedListAppend(localList, 2);
 
-    XCTAssert(ll->next != NULL);
-    XCTAssert(ll->value == 1);
-    XCTAssert(ll->next->value == 2);
+    XCTAssert(localList->next != NULL);
+    XCTAssert(localList->value == 1);
+    XCTAssert(localList->next->value == 2);
     
 }
 
@@ -63,11 +63,10 @@
 }
 
 - (void)testValueAtIndex {
-    XCTAssert(SingleLinkedListValueAtIndex(ll, 0) == 0);
-    XCTAssert(SingleLinkedListValueAtIndex(ll, 1) == 1);
-    XCTAssert(SingleLinkedListValueAtIndex(ll, 2) == 2);
-    XCTAssert(SingleLinkedListValueAtIndex(ll, 3) == 3);
-    
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 0) == 0);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 1) == 1);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 2) == 2);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 3) == 3);
 }
 
 - (void)testToString {
@@ -77,6 +76,16 @@
     XCTAssert(result == 0); // strcmp returns zero for equal strings
 }
 
+- (void)testCount {
+    XCTAssert(SingleLinkedListGetCount(ll) == 4);
+    
+    SingleLinkedList *empty = NULL;
+    XCTAssert(SingleLinkedListGetCount(empty) == 0);
+    
+    SingleLinkedList *one = SingleLinkedListCreate(1);
+    XCTAssert(SingleLinkedListGetCount(one) == 1);
+
+}
 
 
 @end

@@ -10,19 +10,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
 SingleLinkedList * SingleLinkedListCreate(int value) {
     SingleLinkedList * ll = malloc(sizeof(SingleLinkedList));
     ll->value = value;
     ll->next = NULL;
     return ll;
-}
-
-void SingleLinkedListFree(SingleLinkedList * ll) {
-    free(ll);
-}
-
-int SingleLinkedListGetValue(SingleLinkedList *ll) {
-    return ll->value;
 }
 
 SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value) {
@@ -36,25 +30,6 @@ SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value) {
     }
     
     return root;
-}
-
-void SingleLinkedListPrint(SingleLinkedList * ll) {
-    
-    // iterates, moving current to current.next each time until null
-    for (SingleLinkedList *current = ll; current != NULL; current = current->next) {
-        printf("%i", current->value);
-        if (current->next != NULL) {
-            printf(", ");
-        }
-    }
-    
-//    Equivalent
-//    
-//    SingleLinkedList * current = ll;
-//    while (current != NULL) {
-//        current = current->next;
-//    }
-    
 }
 
 char * SingleLinkedListToString(SingleLinkedList * ll) {
@@ -96,13 +71,22 @@ int SingleLinkedListContains(SingleLinkedList * ll, int val) {
     
 }
 
-int SingleLinkedListValueAtIndex(SingleLinkedList * ll, int index) {
+int SingleLinkedListGetValueAtIndex(SingleLinkedList * ll, int index) {
     
     if (index == 0) {
         return ll->value;
     }
     
-    return SingleLinkedListValueAtIndex(ll->next, index - 1);
+    return SingleLinkedListGetValueAtIndex(ll->next, index - 1);
+}
+
+int SingleLinkedListGetCount(SingleLinkedList *ll) {
+    
+    if (ll == NULL) {
+        return 0;
+    }
+    
+    return 1 + SingleLinkedListGetCount(ll->next);
 }
 
 void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index) {
@@ -122,6 +106,29 @@ void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index) {
     }
     
     SingleLinkedListDeleteAtIndex(&(*head)->next, index-1);
+    
+}
+
+void SingleLinkedListFree(SingleLinkedList * ll) {
+    free(ll);
+}
+
+void SingleLinkedListPrint(SingleLinkedList * ll) {
+    
+    // iterates, moving current to current.next each time until null
+    for (SingleLinkedList *current = ll; current != NULL; current = current->next) {
+        printf("%i", current->value);
+        if (current->next != NULL) {
+            printf(", ");
+        }
+    }
+    
+    //    Equivalent
+    //
+    //    SingleLinkedList * current = ll;
+    //    while (current != NULL) {
+    //        current = current->next;
+    //    }
     
 }
 

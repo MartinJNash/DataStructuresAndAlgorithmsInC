@@ -16,21 +16,18 @@ typedef struct SingleLinkedList {
     struct SingleLinkedList * next;
 } SingleLinkedList;
 
-
-
+SingleLinkedList * SingleLinkedListCreate(int value);
 SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value);
 
-
-
-int SingleLinkedListGetValue(SingleLinkedList *ll);
-SingleLinkedList * SingleLinkedListCreate(int value);
-void SingleLinkedListPrint(SingleLinkedList * ll);
+int SingleLinkedListGetCount(SingleLinkedList *ll);
 int SingleLinkedListContains(SingleLinkedList * ll, int val);
-int SingleLinkedListValueAtIndex(SingleLinkedList * ll, int index);
-char * SingleLinkedListToString(SingleLinkedList *ll);
+int SingleLinkedListGetValueAtIndex(SingleLinkedList * ll, int index);
 
-// editing
+void SingleLinkedListFree(SingleLinkedList * ll);
 void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index);
+void SingleLinkedListPrint(SingleLinkedList * ll);
+
+char * SingleLinkedListToString(SingleLinkedList *ll);
 
 
 #endif /* defined(__PointMeDown__SingleLinkedLIst__) */
