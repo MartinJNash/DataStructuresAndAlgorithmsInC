@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0818883-0C59-48B7-BA0A-072298433C27</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PointMeDown</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C8C42E545BF21663EFAECD940036349E65FA86D4</key>
+		<string>github.com:MartinJNash/ConfigurableCoreDataStacker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/PointMeDown/PointMeDown.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C8C42E545BF21663EFAECD940036349E65FA86D4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:MartinJNash/ConfigurableCoreDataStacker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C8C42E545BF21663EFAECD940036349E65FA86D4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C8C42E545BF21663EFAECD940036349E65FA86D4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ConfigurableCoreDataStacks</string>
+		</dict>
+	</array>
+</dict>
+</plist>
