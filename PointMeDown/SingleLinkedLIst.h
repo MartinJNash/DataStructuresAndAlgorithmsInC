@@ -16,8 +16,14 @@ typedef struct SingleLinkedList {
     struct SingleLinkedList * next;
 } SingleLinkedList;
 
+
+
+SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value);
+
+
+
+int SingleLinkedListGetValue(SingleLinkedList *ll);
 SingleLinkedList * SingleLinkedListCreate(int value);
-SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * parent, int value);
 void SingleLinkedListPrint(SingleLinkedList * ll);
 int SingleLinkedListContains(SingleLinkedList * ll, int val);
 

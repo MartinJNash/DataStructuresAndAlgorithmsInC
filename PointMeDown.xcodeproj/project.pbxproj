@@ -11,6 +11,10 @@
 		C639D4EC1AAEEBE700A8A987 /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4EA1AAEEBE700A8A987 /* IntHolder.c */; };
 		C639D4EF1AAEECA400A8A987 /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */; };
 		C639D4F21AAEECC800A8A987 /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */; };
+		C639D4FC1AAF040D00A8A987 /* SingleLinkedListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */; };
+		C639D5001AAF043A00A8A987 /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */; };
+		C639D5011AAF043A00A8A987 /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */; };
+		C639D5021AAF043A00A8A987 /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4EA1AAEEBE700A8A987 /* IntHolder.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,10 +38,20 @@
 		C639D4EE1AAEECA400A8A987 /* NumberCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCruncher.h; sourceTree = "<group>"; };
 		C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleLinkedLIst.c; sourceTree = "<group>"; };
 		C639D4F11AAEECC800A8A987 /* SingleLinkedLIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLinkedLIst.h; sourceTree = "<group>"; };
+		C639D4F71AAF040D00A8A987 /* TestBundle.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBundle.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C639D4FA1AAF040D00A8A987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleLinkedListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C639D4DD1AAEE70800A8A987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C639D4F41AAF040D00A8A987 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C639D4E21AAEE70800A8A987 /* PointMeDown */,
+				C639D4F81AAF040D00A8A987 /* TestBundle */,
 				C639D4E11AAEE70800A8A987 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C639D4E01AAEE70800A8A987 /* PointMeDown */,
+				C639D4F71AAF040D00A8A987 /* TestBundle.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +91,23 @@
 				C639D4EB1AAEEBE700A8A987 /* IntHolder.h */,
 			);
 			path = PointMeDown;
+			sourceTree = "<group>";
+		};
+		C639D4F81AAF040D00A8A987 /* TestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */,
+				C639D4F91AAF040D00A8A987 /* Supporting Files */,
+			);
+			path = TestBundle;
+			sourceTree = "<group>";
+		};
+		C639D4F91AAF040D00A8A987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C639D4FA1AAF040D00A8A987 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +130,23 @@
 			productReference = C639D4E01AAEE70800A8A987 /* PointMeDown */;
 			productType = "com.apple.product-type.tool";
 		};
+		C639D4F61AAF040D00A8A987 /* TestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C639D4FD1AAF040D00A8A987 /* Build configuration list for PBXNativeTarget "TestBundle" */;
+			buildPhases = (
+				C639D4F31AAF040D00A8A987 /* Sources */,
+				C639D4F41AAF040D00A8A987 /* Frameworks */,
+				C639D4F51AAF040D00A8A987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBundle;
+			productName = TestBundle;
+			productReference = C639D4F71AAF040D00A8A987 /* TestBundle.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,9 @@
 				ORGANIZATIONNAME = "Martin Nash";
 				TargetAttributes = {
 					C639D4DF1AAEE70800A8A987 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C639D4F61AAF040D00A8A987 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -124,9 +177,20 @@
 			projectRoot = "";
 			targets = (
 				C639D4DF1AAEE70800A8A987 /* PointMeDown */,
+				C639D4F61AAF040D00A8A987 /* TestBundle */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C639D4F51AAF040D00A8A987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C639D4DC1AAEE70800A8A987 /* Sources */ = {
@@ -137,6 +201,17 @@
 				C639D4E41AAEE70800A8A987 /* main.c in Sources */,
 				C639D4EF1AAEECA400A8A987 /* NumberCruncher.c in Sources */,
 				C639D4EC1AAEEBE700A8A987 /* IntHolder.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C639D4F31AAF040D00A8A987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C639D5001AAF043A00A8A987 /* NumberCruncher.c in Sources */,
+				C639D5021AAF043A00A8A987 /* IntHolder.c in Sources */,
+				C639D5011AAF043A00A8A987 /* SingleLinkedLIst.c in Sources */,
+				C639D4FC1AAF040D00A8A987 /* SingleLinkedListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +306,38 @@
 			};
 			name = Release;
 		};
+		C639D4FE1AAF040D00A8A987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestBundle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C639D4FF1AAF040D00A8A987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestBundle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -248,6 +355,14 @@
 			buildConfigurations = (
 				C639D4E81AAEE70800A8A987 /* Debug */,
 				C639D4E91AAEE70800A8A987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C639D4FD1AAF040D00A8A987 /* Build configuration list for PBXNativeTarget "TestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C639D4FE1AAF040D00A8A987 /* Debug */,
+				C639D4FF1AAF040D00A8A987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

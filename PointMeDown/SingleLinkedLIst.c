@@ -12,6 +12,7 @@
 SingleLinkedList * SingleLinkedListCreate(int value) {
     SingleLinkedList * ll = malloc(sizeof(SingleLinkedList));
     ll->value = value;
+    ll->next = NULL;
     return ll;
 }
 
@@ -19,15 +20,21 @@ void SingleLinkedListFree(SingleLinkedList * ll) {
     free(ll);
 }
 
+int SingleLinkedListGetValue(SingleLinkedList *ll) {
+    return ll->value;
+}
+
 SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value) {
 
     // if null, make new list
     if (root == NULL) {
-        return SingleLinkedListCreate(value);
-    }
+        root = SingleLinkedListCreate(value);
 
-    // if not null, try to make on next
-    root->next = SingleLinkedListAppend(root->next, value);
+    } else {
+        root->next = SingleLinkedListAppend(root->next, value);
+
+    }
+    
     return root;
 }
 
