@@ -7,9 +7,27 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#include "IntHolder.h"
+#include "SingleLinkedLIst.h"
+
+void blankLines(int num) {
+    while (num > 0) {
+        printf("\n");
+        num--;
+    }
+}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+
+    SingleLinkedList * ll = SingleLinkedListCreate(0);
+    SingleLinkedListAppend(ll, 1);
+    SingleLinkedListDeleteAtIndex(&ll, -1);
+    SingleLinkedListPrint(ll);
+    
+    
+    blankLines(3);
     return 0;
 }

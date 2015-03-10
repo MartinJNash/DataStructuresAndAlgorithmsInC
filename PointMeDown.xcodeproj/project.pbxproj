@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C639D4E41AAEE70800A8A987 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4E31AAEE70800A8A987 /* main.c */; };
+		C639D4EC1AAEEBE700A8A987 /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4EA1AAEEBE700A8A987 /* IntHolder.c */; };
+		C639D4EF1AAEECA400A8A987 /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */; };
+		C639D4F21AAEECC800A8A987 /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		C639D4E01AAEE70800A8A987 /* PointMeDown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PointMeDown; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639D4E31AAEE70800A8A987 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C639D4EA1AAEEBE700A8A987 /* IntHolder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IntHolder.c; sourceTree = "<group>"; };
+		C639D4EB1AAEEBE700A8A987 /* IntHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntHolder.h; sourceTree = "<group>"; };
+		C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NumberCruncher.c; sourceTree = "<group>"; };
+		C639D4EE1AAEECA400A8A987 /* NumberCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCruncher.h; sourceTree = "<group>"; };
+		C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleLinkedLIst.c; sourceTree = "<group>"; };
+		C639D4F11AAEECC800A8A987 /* SingleLinkedLIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLinkedLIst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				C639D4E31AAEE70800A8A987 /* main.c */,
+				C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */,
+				C639D4EE1AAEECA400A8A987 /* NumberCruncher.h */,
+				C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */,
+				C639D4F11AAEECC800A8A987 /* SingleLinkedLIst.h */,
+				C639D4EA1AAEEBE700A8A987 /* IntHolder.c */,
+				C639D4EB1AAEEBE700A8A987 /* IntHolder.h */,
 			);
 			path = PointMeDown;
 			sourceTree = "<group>";
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C639D4F21AAEECC800A8A987 /* SingleLinkedLIst.c in Sources */,
 				C639D4E41AAEE70800A8A987 /* main.c in Sources */,
+				C639D4EF1AAEECA400A8A987 /* NumberCruncher.c in Sources */,
+				C639D4EC1AAEEBE700A8A987 /* IntHolder.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
