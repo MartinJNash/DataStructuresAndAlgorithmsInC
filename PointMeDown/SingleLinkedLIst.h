@@ -26,6 +26,8 @@ int SingleLinkedListGetValue(SingleLinkedList *ll);
 SingleLinkedList * SingleLinkedListCreate(int value);
 void SingleLinkedListPrint(SingleLinkedList * ll);
 int SingleLinkedListContains(SingleLinkedList * ll, int val);
+int SingleLinkedListValueAtIndex(SingleLinkedList * ll, int index);
+char * SingleLinkedListToString(SingleLinkedList *ll);
 
 // editing
 void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index);

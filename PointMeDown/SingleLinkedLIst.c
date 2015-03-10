@@ -8,6 +8,7 @@
 
 #include "SingleLinkedLIst.h"
 #include <stdlib.h>
+#include <string.h>
 
 SingleLinkedList * SingleLinkedListCreate(int value) {
     SingleLinkedList * ll = malloc(sizeof(SingleLinkedList));
@@ -32,7 +33,6 @@ SingleLinkedList * SingleLinkedListAppend(SingleLinkedList * root, int value) {
 
     } else {
         root->next = SingleLinkedListAppend(root->next, value);
-
     }
     
     return root;
@@ -42,7 +42,10 @@ void SingleLinkedListPrint(SingleLinkedList * ll) {
     
     // iterates, moving current to current.next each time until null
     for (SingleLinkedList *current = ll; current != NULL; current = current->next) {
-        printf("%i, ", current->value);
+        printf("%i", current->value);
+        if (current->next != NULL) {
+            printf(", ");
+        }
     }
     
 //    Equivalent
@@ -52,6 +55,33 @@ void SingleLinkedListPrint(SingleLinkedList * ll) {
 //        current = current->next;
 //    }
     
+}
+
+char * SingleLinkedListToString(SingleLinkedList * ll) {
+    
+    int stringLength = 50;
+    char * stringer = malloc(sizeof(char) * stringLength);
+    
+    SingleLinkedList *current = ll;
+    while (current != NULL) {
+
+        // create a string for current value
+        char local[256];
+        sprintf(local, "%i", current->value);
+        
+        // append comma if next exists
+        if (current->next != NULL) {
+            strcat(local, ", ");
+        }
+        
+        // append temp string to full string
+        strncat(stringer, local, strlen(local));
+        
+        // go to next
+        current = current->next;
+    }
+
+    return stringer;
 }
 
 int SingleLinkedListContains(SingleLinkedList * ll, int val) {
@@ -64,6 +94,15 @@ int SingleLinkedListContains(SingleLinkedList * ll, int val) {
     
     return SingleLinkedListContains(ll->next, val);
     
+}
+
+int SingleLinkedListValueAtIndex(SingleLinkedList * ll, int index) {
+    
+    if (index == 0) {
+        return ll->value;
+    }
+    
+    return SingleLinkedListValueAtIndex(ll->next, index - 1);
 }
 
 void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index) {
@@ -85,5 +124,4 @@ void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index) {
     SingleLinkedListDeleteAtIndex(&(*head)->next, index-1);
     
 }
-
 
