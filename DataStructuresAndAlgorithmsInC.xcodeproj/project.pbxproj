@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C619DE501AB02D0600F49F44 /* BinaryTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C619DE4F1AB02D0600F49F44 /* BinaryTreeTests.m */; };
-		C619DE511AB02E3500F49F44 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = C619DE4C1AB02C9F00F49F44 /* BinaryTree.c */; };
 		C639D4FC1AAF040D00A8A987 /* SingleLinkedListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */; };
-		C639D5001AAF043A00A8A987 /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */; };
-		C639D5011AAF043A00A8A987 /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */; };
-		C639D5021AAF043A00A8A987 /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C639D4EA1AAEEBE700A8A987 /* IntHolder.c */; };
+		C63E4C0E1AB0C347001A4F8B /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C061AB0C347001A4F8B /* BinaryTree.c */; };
+		C63E4C0F1AB0C347001A4F8B /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C081AB0C347001A4F8B /* IntHolder.c */; };
+		C63E4C101AB0C347001A4F8B /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C0A1AB0C347001A4F8B /* NumberCruncher.c */; };
+		C63E4C111AB0C347001A4F8B /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C0C1AB0C347001A4F8B /* SingleLinkedLIst.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C619DE4C1AB02C9F00F49F44 /* BinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
-		C619DE4D1AB02C9F00F49F44 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		C619DE4F1AB02D0600F49F44 /* BinaryTreeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeTests.m; sourceTree = "<group>"; };
-		C639D4EA1AAEEBE700A8A987 /* IntHolder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IntHolder.c; sourceTree = "<group>"; };
-		C639D4EB1AAEEBE700A8A987 /* IntHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntHolder.h; sourceTree = "<group>"; };
-		C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NumberCruncher.c; sourceTree = "<group>"; };
-		C639D4EE1AAEECA400A8A987 /* NumberCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCruncher.h; sourceTree = "<group>"; };
-		C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleLinkedLIst.c; sourceTree = "<group>"; };
-		C639D4F11AAEECC800A8A987 /* SingleLinkedLIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLinkedLIst.h; sourceTree = "<group>"; };
 		C639D4F71AAF040D00A8A987 /* TestBundle.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBundle.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C639D4FA1AAF040D00A8A987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleLinkedListTests.m; sourceTree = "<group>"; };
+		C63E4C061AB0C347001A4F8B /* BinaryTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BinaryTree.c; path = Code/BinaryTree.c; sourceTree = SOURCE_ROOT; };
+		C63E4C071AB0C347001A4F8B /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinaryTree.h; path = Code/BinaryTree.h; sourceTree = SOURCE_ROOT; };
+		C63E4C081AB0C347001A4F8B /* IntHolder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = IntHolder.c; path = Code/IntHolder.c; sourceTree = SOURCE_ROOT; };
+		C63E4C091AB0C347001A4F8B /* IntHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntHolder.h; path = Code/IntHolder.h; sourceTree = SOURCE_ROOT; };
+		C63E4C0A1AB0C347001A4F8B /* NumberCruncher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = NumberCruncher.c; path = Code/NumberCruncher.c; sourceTree = SOURCE_ROOT; };
+		C63E4C0B1AB0C347001A4F8B /* NumberCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberCruncher.h; path = Code/NumberCruncher.h; sourceTree = SOURCE_ROOT; };
+		C63E4C0C1AB0C347001A4F8B /* SingleLinkedLIst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SingleLinkedLIst.c; path = Code/SingleLinkedLIst.c; sourceTree = SOURCE_ROOT; };
+		C63E4C0D1AB0C347001A4F8B /* SingleLinkedLIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleLinkedLIst.h; path = Code/SingleLinkedLIst.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +61,14 @@
 		C639D4E21AAEE70800A8A987 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				C619DE4C1AB02C9F00F49F44 /* BinaryTree.c */,
-				C619DE4D1AB02C9F00F49F44 /* BinaryTree.h */,
-				C639D4ED1AAEECA400A8A987 /* NumberCruncher.c */,
-				C639D4EE1AAEECA400A8A987 /* NumberCruncher.h */,
-				C639D4F01AAEECC800A8A987 /* SingleLinkedLIst.c */,
-				C639D4F11AAEECC800A8A987 /* SingleLinkedLIst.h */,
-				C639D4EA1AAEEBE700A8A987 /* IntHolder.c */,
-				C639D4EB1AAEEBE700A8A987 /* IntHolder.h */,
+				C63E4C061AB0C347001A4F8B /* BinaryTree.c */,
+				C63E4C071AB0C347001A4F8B /* BinaryTree.h */,
+				C63E4C081AB0C347001A4F8B /* IntHolder.c */,
+				C63E4C091AB0C347001A4F8B /* IntHolder.h */,
+				C63E4C0A1AB0C347001A4F8B /* NumberCruncher.c */,
+				C63E4C0B1AB0C347001A4F8B /* NumberCruncher.h */,
+				C63E4C0C1AB0C347001A4F8B /* SingleLinkedLIst.c */,
+				C63E4C0D1AB0C347001A4F8B /* SingleLinkedLIst.h */,
 			);
 			name = Code;
 			path = PointMeDown;
@@ -160,11 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C619DE501AB02D0600F49F44 /* BinaryTreeTests.m in Sources */,
-				C639D5001AAF043A00A8A987 /* NumberCruncher.c in Sources */,
-				C619DE511AB02E3500F49F44 /* BinaryTree.c in Sources */,
-				C639D5021AAF043A00A8A987 /* IntHolder.c in Sources */,
-				C639D5011AAF043A00A8A987 /* SingleLinkedLIst.c in Sources */,
+				C63E4C0F1AB0C347001A4F8B /* IntHolder.c in Sources */,
 				C639D4FC1AAF040D00A8A987 /* SingleLinkedListTests.m in Sources */,
+				C63E4C101AB0C347001A4F8B /* NumberCruncher.c in Sources */,
+				C63E4C111AB0C347001A4F8B /* SingleLinkedLIst.c in Sources */,
+				C63E4C0E1AB0C347001A4F8B /* BinaryTree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
