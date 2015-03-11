@@ -1,10 +1,3 @@
-//
-//  SingleLinkedLIst.c
-//  PointMeDown
-//
-//  Created by Martin Nash on 3/10/15.
-//  Copyright (c) 2015 Martin Nash. All rights reserved.
-//
 
 #include "SingleLinkedLIst.h"
 #include <stdlib.h>

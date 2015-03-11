@@ -1,10 +1,4 @@
-//
-//  IntHolder.h
-//  PointMeDown
-//
-//  Created by Martin Nash on 3/10/15.
-//  Copyright (c) 2015 Martin Nash. All rights reserved.
-//
+
 
 #ifndef __PointMeDown__IntHolder__
 #define __PointMeDown__IntHolder__

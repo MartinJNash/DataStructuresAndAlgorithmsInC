@@ -1,10 +1,3 @@
-//
-//  BinaryTree.h
-//  PointMeDown
-//
-//  Created by Martin Nash on 3/11/15.
-//  Copyright (c) 2015 Martin Nash. All rights reserved.
-//
 
 #ifndef __PointMeDown__BinaryTree__
 #define __PointMeDown__BinaryTree__
