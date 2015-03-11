@@ -52,32 +52,31 @@ int BinaryTreeContainsValue(BinaryTree *root, int val) {
     }
 }
 
-
-// Leaks memory
 char * BinaryTreeLCRString(BinaryTree *root) {
-    
-    char * holder = malloc(sizeof(char) * 9999);
-    
+    char * res = malloc(sizeof(char) * 8000);
+    BinaryTreeLCRStringMutating(root, &res);
+    return res;
+}
+
+void BinaryTreeLCRStringMutating(BinaryTree *root, char ** string) {
+
     // append left
     if (root->left != NULL) {
-        char * lString = BinaryTreeLCRString(root->left);
-        strcat(holder, lString);
-        strcat(holder, ", ");
+        BinaryTreeLCRStringMutating(root->left, string);
+        strcat(*string, ", ");
     }
     
     char curr[233];
     sprintf(curr, "%i", root->value);
-    strcat(holder, curr);
+    strcat(*string, curr);
     
     // append right
     if (root->right != NULL) {
-        strcat(holder, ", ");
-        char * rString = BinaryTreeLCRString(root->right);
-        strcat(holder, rString);
+        strcat(*string, ", ");
+        BinaryTreeLCRStringMutating(root->right, string);
     }
     
     
-    return holder;
     
 }
 

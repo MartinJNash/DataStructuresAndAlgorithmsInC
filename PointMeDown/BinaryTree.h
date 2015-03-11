@@ -23,5 +23,6 @@ int BinaryTreeContainsValue(BinaryTree *root, int val);
 int BinaryTreeCount(BinaryTree *root);
 
 char * BinaryTreeLCRString(BinaryTree *root);
+void BinaryTreeLCRStringMutating(BinaryTree *root, char ** string);
 
 #endif /* defined(__PointMeDown__BinaryTree__) */

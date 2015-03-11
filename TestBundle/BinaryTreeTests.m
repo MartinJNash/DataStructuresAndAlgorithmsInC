@@ -57,6 +57,7 @@
 }
 
 - (void)testContains {
+
     BinaryTree *root = BinaryTreeCreate(10);
     BinaryTreeAppend(&root, 0);
     BinaryTreeAppend(&root, 33);
@@ -83,10 +84,7 @@
     char * thirdResult = BinaryTreeLCRString(root);
     XCTAssert(strcmp(thirdResult, "0, 10, 33") == 0);
 
-
 }
-
-
 
 
 @end
