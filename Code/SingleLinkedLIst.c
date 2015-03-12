@@ -125,3 +125,83 @@ void SingleLinkedListPrint(SingleLinkedList * ll) {
     
 }
 
+
+
+// reverses in place
+// not recursive
+void SingleLinkedListReverseInPlace(SingleLinkedList ** ll) {
+
+    //
+    // head = [head, second, t, t, t]
+    //
+    // reversed = [head]
+    // tail = [second, t, t, t]
+    //
+    
+    
+    // old reversed = [head], old reversed holds on to reversed
+    // head == [ second, t, t, t ]
+    // reversed = [second]
+    // tail = [t t t]
+    // reversed = [second] + old reversed
+    
+    // old reversed = reversed
+    // tail =  head.next
+    // reversed = head
+    
+    
+    SingleLinkedList *reversed = NULL;
+    SingleLinkedList *head = *ll;
+
+    while (head != NULL) {
+
+        // hold on to old reversed
+        SingleLinkedList *oldReversed = reversed;
+        
+        SingleLinkedList *tail = head->next;
+        
+        // new reversed gets head
+        reversed = head;
+        reversed->next = oldReversed;
+        head = tail;
+        
+    }
+    
+    *ll = reversed;
+    
+}
+
+
+// uses append, so creates new structs
+// original list untouched
+void SingleLinkedListReverseRecursive(SingleLinkedList *ll, SingleLinkedList **accumulation) {
+    
+    if (ll == NULL) {
+        return;
+    }
+
+    SingleLinkedListReverseRecursive(ll->next, &(*accumulation));
+    *accumulation = SingleLinkedListAppend(*accumulation, ll->value);
+    
+    
+}
+
+
+// Original, root is modified
+// from s/o http://stackoverflow.com/a/1803114/908958
+//
+SingleLinkedList * SingleLinkedListReverseRecursiveTwo(SingleLinkedList *root, SingleLinkedList *end) {
+    
+    SingleLinkedList *tail = root->next;
+    root->next = end;
+    
+    if (tail != NULL) {
+        return SingleLinkedListReverseRecursiveTwo(tail, root);
+    } else {
+        return root;
+    }
+    
+    
+    
+}
+

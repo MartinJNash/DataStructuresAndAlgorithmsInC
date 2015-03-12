@@ -20,8 +20,11 @@ int SingleLinkedListGetValueAtIndex(SingleLinkedList * ll, int index);
 void SingleLinkedListFree(SingleLinkedList * ll);
 void SingleLinkedListDeleteAtIndex(SingleLinkedList **head, int index);
 void SingleLinkedListPrint(SingleLinkedList * ll);
+void SingleLinkedListReverseInPlace(SingleLinkedList ** ll);
 
 char * SingleLinkedListToString(SingleLinkedList *ll);
+void SingleLinkedListReverseRecursive(SingleLinkedList *ll, SingleLinkedList **accumulation);
+SingleLinkedList * SingleLinkedListReverseRecursiveTwo(SingleLinkedList *root, SingleLinkedList *end);
 
 
 #endif /* defined(__PointMeDown__SingleLinkedLIst__) */

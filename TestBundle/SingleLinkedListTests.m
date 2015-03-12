@@ -87,5 +87,53 @@
 
 }
 
+- (void)testReverse {
+
+    SingleLinkedListReverseInPlace(&ll);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 0) == 3);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 1) == 2);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 2) == 1);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 3) == 0);
+}
+
+
+- (void)testRecursiveReverse {
+    
+    SingleLinkedList *rev = NULL;
+    SingleLinkedListReverseRecursive(ll, &rev);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 0) == 3);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 1) == 2);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 2) == 1);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 3) == 0);
+    
+    
+    // Original is unaltered
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 0) == 0);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 1) == 1);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 2) == 2);
+    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 3) == 3);
+
+
+}
+
+- (void)testRecursiveReverseTwo {
+
+    SingleLinkedList *rev = SingleLinkedListReverseRecursiveTwo(ll, NULL);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 0) == 3);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 1) == 2);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 2) == 1);
+    XCTAssert(SingleLinkedListGetValueAtIndex(rev, 3) == 0);
+    
+// original is altered XXX
+//
+//    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 0) == 0);
+//    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 1) == 1);
+//    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 2) == 2);
+//    XCTAssert(SingleLinkedListGetValueAtIndex(ll, 3) == 3);
+
+    
+    
+}
+
 
 @end
