@@ -27,4 +27,6 @@ void SingleLinkedListReverseRecursive(SingleLinkedList *ll, SingleLinkedList **a
 SingleLinkedList * SingleLinkedListReverseRecursiveTwo(SingleLinkedList *root, SingleLinkedList *end);
 
 
+void SingleLinkedListAppendValueAtIndex(SingleLinkedList **list, int val, int index);
+
 #endif /* defined(__PointMeDown__SingleLinkedLIst__) */

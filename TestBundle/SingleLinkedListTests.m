@@ -136,4 +136,36 @@
 }
 
 
+- (void)testAppendAtIndex {
+    SingleLinkedList *list = SingleLinkedListCreate(2);
+    
+    // append at end
+    SingleLinkedListAppendValueAtIndex(&list, 99, 1);
+    XCTAssert(list->next != NULL);
+    XCTAssert(list->next->value == 99);
+    XCTAssert(SingleLinkedListGetCount(list) == 2);
+    
+    // append between two
+    SingleLinkedListAppendValueAtIndex(&list, 44, 1);
+    XCTAssert(list->next != NULL);
+    XCTAssert(list->next->value == 44);
+    XCTAssert(SingleLinkedListGetCount(list) == 3);
+
+    
+    // append at beginning
+    SingleLinkedListAppendValueAtIndex(&list, 7, 0);
+    XCTAssert(list != NULL);
+    XCTAssert(list->value == 7);
+    XCTAssert(SingleLinkedListGetCount(list) == 4);
+
+    
+    
+    SingleLinkedList *nullist = NULL;
+    SingleLinkedListAppendValueAtIndex(&nullist, 42, 0);
+    XCTAssert(nullist != NULL);
+    XCTAssert(nullist->value == 42);
+
+
+}
+
 @end

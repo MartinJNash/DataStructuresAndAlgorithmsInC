@@ -200,8 +200,36 @@ SingleLinkedList * SingleLinkedListReverseRecursiveTwo(SingleLinkedList *root, S
     } else {
         return root;
     }
+}
+
+
+// Append a value at a given index
+void SingleLinkedListAppendValueAtIndex(SingleLinkedList **list, int val, int index) {
     
+    // don't deal with negative indexes
+    if (index < 0 ) {
+        return;
+    }
     
+    // if we're at null, and looking to go futher, quit
+    // index out of bounds!
+    if (*list == NULL && index > 0) {
+        return;
+    }
+    
+    // place to add
+    if (index == 0) {
+        
+        SingleLinkedList *new = SingleLinkedListCreate(val);
+        SingleLinkedList *old = *list;
+        *list = new;
+        new->next = old;
+        
+    }
+    
+    // move on to next node and try to insert
+    SingleLinkedListAppendValueAtIndex(&(*list)->next, val, index-1);
     
 }
+
 

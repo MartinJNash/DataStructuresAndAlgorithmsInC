@@ -13,6 +13,7 @@
 		C63E4C0F1AB0C347001A4F8B /* IntHolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C081AB0C347001A4F8B /* IntHolder.c */; };
 		C63E4C101AB0C347001A4F8B /* NumberCruncher.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C0A1AB0C347001A4F8B /* NumberCruncher.c */; };
 		C63E4C111AB0C347001A4F8B /* SingleLinkedLIst.c in Sources */ = {isa = PBXBuildFile; fileRef = C63E4C0C1AB0C347001A4F8B /* SingleLinkedLIst.c */; };
+		C69055D11AB197D000E81C4A /* RandomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C69055D01AB197D000E81C4A /* RandomTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C63E4C0B1AB0C347001A4F8B /* NumberCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NumberCruncher.h; path = Code/NumberCruncher.h; sourceTree = SOURCE_ROOT; };
 		C63E4C0C1AB0C347001A4F8B /* SingleLinkedLIst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SingleLinkedLIst.c; path = Code/SingleLinkedLIst.c; sourceTree = SOURCE_ROOT; };
 		C63E4C0D1AB0C347001A4F8B /* SingleLinkedLIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleLinkedLIst.h; path = Code/SingleLinkedLIst.h; sourceTree = SOURCE_ROOT; };
+		C69055D01AB197D000E81C4A /* RandomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C639D4FB1AAF040D00A8A987 /* SingleLinkedListTests.m */,
+				C69055D01AB197D000E81C4A /* RandomTests.m */,
 				C619DE4F1AB02D0600F49F44 /* BinaryTreeTests.m */,
 				C639D4F91AAF040D00A8A987 /* Supporting Files */,
 			);
@@ -162,6 +165,7 @@
 				C619DE501AB02D0600F49F44 /* BinaryTreeTests.m in Sources */,
 				C63E4C0F1AB0C347001A4F8B /* IntHolder.c in Sources */,
 				C639D4FC1AAF040D00A8A987 /* SingleLinkedListTests.m in Sources */,
+				C69055D11AB197D000E81C4A /* RandomTests.m in Sources */,
 				C63E4C101AB0C347001A4F8B /* NumberCruncher.c in Sources */,
 				C63E4C111AB0C347001A4F8B /* SingleLinkedLIst.c in Sources */,
 				C63E4C0E1AB0C347001A4F8B /* BinaryTree.c in Sources */,
