@@ -168,4 +168,23 @@
 
 }
 
+-(void)testAppendAtEnd {
+    SingleLinkedList *nullist = NULL;
+    int count = 0;
+    int val = 0;
+
+    SingleLinkedListAppendValueAtEnd(&nullist, 30);
+    count = SingleLinkedListGetCount(nullist);
+    val = SingleLinkedListGetValueAtIndex(nullist, 0);
+    XCTAssert(count == 1);
+    XCTAssert(val == 30);
+    
+    SingleLinkedListAppendValueAtEnd(&nullist, 42);
+    count = SingleLinkedListGetCount(nullist);
+    val = SingleLinkedListGetValueAtIndex(nullist, 0);
+    XCTAssert(count == 2);
+    XCTAssert(val = 42);
+
+}
+
 @end

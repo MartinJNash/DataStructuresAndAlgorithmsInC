@@ -232,4 +232,15 @@ void SingleLinkedListAppendValueAtIndex(SingleLinkedList **list, int val, int in
     
 }
 
+void SingleLinkedListAppendValueAtEnd(SingleLinkedList **list, int val) {
+    
+    if (*list == NULL) {
+        *list = SingleLinkedListCreate(val);
+        return;
+    }
+    
+    SingleLinkedListAppendValueAtEnd(&(*list)->next, val);
+    
+}
+
 
